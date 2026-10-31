@@ -12,7 +12,9 @@
 <p align="center">
   🇷🇺 <a href="#ru">Версия на русском языке ниже</a>
 </p>
-
+<p align="center">
+  <img src="cat.svg" width="220" alt="Cute animated cat" />
+</p>
 ---
 
 ## 👩‍💻 About me
@@ -41,7 +43,15 @@
 
 - Telegram: @zrnkrbnv
 - Email: zarina.kurbanova2008@yandex.ru
+## 🐍 Contribution snake
 
+<p align="center">
+  <picture>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/zrnkrbnv/zrnkrbnv/output/github-snake-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/zrnkrbnv/zrnkrbnv/output/github-snake.svg" />
+    <img alt="Snake eating my contributions" src="https://raw.githubusercontent.com/zrnkrbnv/zrnkrbnv/output/github-snake.svg" />
+  </picture>
+</p>
 ---
 
 <p align="center">
