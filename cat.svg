@@ -1,0 +1,68 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 180" width="240" height="180" role="img" aria-label="Cute animated cat">
+  <style>
+    .tail  { transform-box: fill-box; transform-origin: 0% 100%; animation: wag 2s ease-in-out infinite; }
+    .head  { transform-box: fill-box; transform-origin: 50% 100%; animation: tilt 5s ease-in-out infinite; }
+    .eyes  { transform-box: fill-box; transform-origin: center; animation: blink 4s infinite; }
+    .heart { opacity: 0; animation: float 3s ease-in infinite; }
+    .h2    { animation-delay: 1.5s; }
+    @keyframes wag   { 0%, 100% { transform: rotate(-12deg); } 50% { transform: rotate(14deg); } }
+    @keyframes tilt  { 0%, 100% { transform: rotate(-3deg); }  50% { transform: rotate(3deg); } }
+    @keyframes blink { 0%, 92%, 100% { transform: scaleY(1); } 95% { transform: scaleY(0.1); } }
+    @keyframes float { 0% { opacity: 0; transform: translateY(0); } 20% { opacity: 1; } 100% { opacity: 0; transform: translateY(-30px); } }
+  </style>
+
+  <!-- shadow -->
+  <ellipse cx="110" cy="166" rx="64" ry="8" fill="#000" opacity="0.08"/>
+
+  <!-- tail -->
+  <path class="tail" d="M165 140 C205 140 215 95 195 80" fill="none" stroke="#f4a259" stroke-width="14" stroke-linecap="round"/>
+
+  <!-- body -->
+  <ellipse cx="110" cy="135" rx="55" ry="33" fill="#f4a259"/>
+  <ellipse cx="110" cy="146" rx="32" ry="20" fill="#fde3c1"/>
+
+  <!-- paws -->
+  <ellipse cx="86" cy="163" rx="14" ry="8" fill="#fde3c1"/>
+  <ellipse cx="134" cy="163" rx="14" ry="8" fill="#fde3c1"/>
+
+  <!-- head -->
+  <g class="head">
+    <!-- ears -->
+    <polygon points="72,62 76,24 106,46" fill="#f4a259"/>
+    <polygon points="148,62 144,24 114,46" fill="#f4a259"/>
+    <polygon points="80,56 82,36 98,48" fill="#f7b6b6"/>
+    <polygon points="140,56 138,36 122,48" fill="#f7b6b6"/>
+
+    <circle cx="110" cy="85" r="42" fill="#f4a259"/>
+
+    <!-- forehead stripes -->
+    <path d="M110 45 v10 M100 47 v8 M120 47 v8" stroke="#d9822b" stroke-width="4" stroke-linecap="round"/>
+
+    <!-- cheeks -->
+    <circle cx="82" cy="98" r="7" fill="#f7a3a3" opacity="0.6"/>
+    <circle cx="138" cy="98" r="7" fill="#f7a3a3" opacity="0.6"/>
+
+    <!-- eyes -->
+    <g class="eyes">
+      <ellipse cx="94" cy="82" rx="5" ry="7" fill="#2b2b2b"/>
+      <ellipse cx="126" cy="82" rx="5" ry="7" fill="#2b2b2b"/>
+      <circle cx="95.5" cy="79.5" r="1.8" fill="#fff"/>
+      <circle cx="127.5" cy="79.5" r="1.8" fill="#fff"/>
+    </g>
+
+    <!-- nose and mouth -->
+    <path d="M105 94 h10 l-5 6 z" fill="#e57373"/>
+    <path d="M110 100 v4 M110 104 q-6 6 -12 1 M110 104 q6 6 12 1" stroke="#7a4a2a" stroke-width="2" fill="none" stroke-linecap="round"/>
+
+    <!-- whiskers -->
+    <path d="M70 96 H50 M70 101 L52 108 M150 96 H170 M150 101 L168 108" stroke="#8a5a3a" stroke-width="1.8" stroke-linecap="round"/>
+  </g>
+
+  <!-- hearts -->
+  <g transform="translate(172,56)">
+    <path class="heart" d="M8 14 C-4 6 2 -2 8 4 C14 -2 20 6 8 14 Z" fill="#ef6f8e"/>
+  </g>
+  <g transform="translate(190,40)">
+    <path class="heart h2" d="M8 14 C-4 6 2 -2 8 4 C14 -2 20 6 8 14 Z" fill="#ef6f8e"/>
+  </g>
+</svg>
